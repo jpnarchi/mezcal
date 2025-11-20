@@ -44,7 +44,7 @@ export default function Navbar() {
           <img
             src="/bg-header-min.png"
             alt="Background"
-            className="w-full h-full object-contain object-center"
+            className="w-full h-full object-contain object-center hidden md:block"
           />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -93,26 +93,26 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex justify-center items-center h-28">
+          <div className="md:hidden flex justify-center items-center h-16 py-2">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-montelobos-dark focus:outline-none"
+              className="text-montelobos-cream focus:outline-none bg-montelobos-dark/50 rounded-lg p-3 backdrop-blur-sm"
             >
               <div className="w-6 h-5 flex flex-col justify-between">
                 <span
-                  className={`h-0.5 w-full bg-montelobos-dark transition-all duration-300 ${
+                  className={`h-0.5 w-full bg-montelobos-cream transition-all duration-300 ${
                     isMenuOpen ? "rotate-45 translate-y-2" : ""
                   }`}
                 />
                 <span
-                  className={`h-0.5 w-full bg-montelobos-dark transition-all duration-300 ${
+                  className={`h-0.5 w-full bg-montelobos-cream transition-all duration-300 ${
                     isMenuOpen ? "opacity-0" : ""
                   }`}
                 />
                 <span
-                  className={`h-0.5 w-full bg-montelobos-dark transition-all duration-300 ${
+                  className={`h-0.5 w-full bg-montelobos-cream transition-all duration-300 ${
                     isMenuOpen ? "-rotate-45 -translate-y-2" : ""
                   }`}
                 />
@@ -128,14 +128,15 @@ export default function Navbar() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
-              className="md:hidden bg-montelobos-brown overflow-hidden"
+              className="md:hidden bg-montelobos-dark/95 backdrop-blur-md overflow-hidden border-t border-montelobos-bronze/20"
             >
-              <div className="px-4 py-4 space-y-3">
+              <div className="px-6 py-6 space-y-4">
                 {navItems.map((item) => (
                   <a
                     key={item.name}
                     href="#"
-                    className="block py-2 text-montelobos-cream hover:text-montelobos-bronze transition-colors duration-200 font-bold"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="block py-3 text-montelobos-cream hover:text-montelobos-bronze transition-colors duration-200 font-serif font-bold uppercase tracking-wider text-center border-b border-montelobos-bronze/10 last:border-0"
                     dangerouslySetInnerHTML={{ __html: item.name }}
                   />
                 ))}

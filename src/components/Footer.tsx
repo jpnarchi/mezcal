@@ -1,21 +1,21 @@
 export default function Footer() {
   return (
     <footer className="bg-montelobos-dark border-t border-montelobos-bronze/20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           {/* Brand Section */}
-          <div className="col-span-1 md:col-span-2">
+          <div className="col-span-1 md:col-span-2 text-center md:text-left">
           <img
                 src="/logo_texto.png"
                 alt="Montelobos Logo"
-                className="h-12 w-auto object-contain mb-10"
+                className="h-10 md:h-12 w-auto object-contain mb-6 md:mb-10 mx-auto md:mx-0"
               />
-            <p className="text-montelobos-cream/70 mb-6 max-w-md leading-relaxed">
+            <p className="text-montelobos-cream/70 mb-6 max-w-md leading-relaxed mx-auto md:mx-0">
               Mezcal artesanal destilado en Oaxaca con agave espadín de las
               montañas. Honramos las tradiciones ancestrales mientras abrazamos
               la sustentabilidad.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center md:justify-start">
               <a
                 href="#"
                 className="text-montelobos-cream/60 hover:text-montelobos-bronze transition-colors duration-300"
@@ -70,15 +70,15 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-montelobos font-serif text-lg mb-4 uppercase tracking-wider">
+          <div className="text-center md:text-left">
+            <h3 className="text-montelobos font-serif text-base md:text-lg mb-3 md:mb-4 uppercase tracking-wider">
               Navegación
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2 md:space-y-3">
               <li>
                 <a
                   href="#productos"
-                  className="text-montelobos-cream/70 hover:text-montelobos-bronze transition-colors duration-300"
+                  className="text-montelobos-cream/70 hover:text-montelobos-bronze transition-colors duration-300 text-sm md:text-base"
                 >
                   Productos
                 </a>
@@ -86,7 +86,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#sobre-nosotros"
-                  className="text-montelobos-cream/70 hover:text-montelobos-bronze transition-colors duration-300"
+                  className="text-montelobos-cream/70 hover:text-montelobos-bronze transition-colors duration-300 text-sm md:text-base"
                 >
                   Sobre Nosotros
                 </a>
@@ -94,7 +94,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#cocteles"
-                  className="text-montelobos-cream/70 hover:text-montelobos-bronze transition-colors duration-300"
+                  className="text-montelobos-cream/70 hover:text-montelobos-bronze transition-colors duration-300 text-sm md:text-base"
                 >
                   Cócteles
                 </a>
@@ -102,7 +102,7 @@ export default function Footer() {
               <li>
                 <a
                   href="#sustentabilidad"
-                  className="text-montelobos-cream/70 hover:text-montelobos-bronze transition-colors duration-300"
+                  className="text-montelobos-cream/70 hover:text-montelobos-bronze transition-colors duration-300 text-sm md:text-base"
                 >
                   Sustentabilidad
                 </a>
@@ -111,23 +111,23 @@ export default function Footer() {
           </div>
 
           {/* Legal */}
-          <div>
-            <h3 className="text-montelobos font-serif text-lg mb-4 uppercase tracking-wider">
+          <div className="text-center md:text-left">
+            <h3 className="text-montelobos font-serif text-base md:text-lg mb-3 md:mb-4 uppercase tracking-wider">
               Legal
             </h3>
-            <ul className="space-y-3 text-montelobos-cream/70">
+            <ul className="space-y-2 md:space-y-3 text-montelobos-cream/70">
               <li>
-                <a href="#" className="hover:text-montelobos-bronze transition-colors duration-300">
+                <a href="#" className="hover:text-montelobos-bronze transition-colors duration-300 text-sm md:text-base">
                   Política de Privacidad
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-montelobos-bronze transition-colors duration-300">
+                <a href="#" className="hover:text-montelobos-bronze transition-colors duration-300 text-sm md:text-base">
                   Política de Cookies
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-montelobos-bronze transition-colors duration-300">
+                <a href="#" className="hover:text-montelobos-bronze transition-colors duration-300 text-sm md:text-base">
                   Términos y Condiciones
                 </a>
               </li>
@@ -136,12 +136,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-montelobos-bronze/20">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-montelobos-cream/60 text-sm">
+        <div className="mt-8 md:mt-12 pt-6 md:pt-8 border-t border-montelobos-bronze/20">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
+            <p className="text-montelobos-cream/60 text-xs md:text-sm text-center md:text-left">
               © 2025 Cielo y Tierra Mezcal. Todos los derechos reservados.
             </p>
-            <p className="text-montelobos-cream/60 text-sm text-center">
+            <p className="text-montelobos-cream/60 text-xs md:text-sm text-center">
               Bebe con responsabilidad. Prohibida su venta a menores de edad.
             </p>
           </div>
