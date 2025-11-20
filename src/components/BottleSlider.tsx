@@ -103,7 +103,7 @@ export default function BottleSlider() {
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.2 }}
-                className="space-y-4 md:space-y-6 ml-0 md:ml-20 order-2 lg:order-1"
+                className="space-y-4 md:space-y-6 ml-0 md:ml-20 order-1 lg:order-1"
               >
                 {/* Subtitle/Category */}
                 <div className="flex items-center gap-2">
@@ -153,7 +153,7 @@ export default function BottleSlider() {
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
-                className="flex items-center justify-center h-full relative order-1 lg:order-2 min-h-[50vh] md:min-h-0"
+                className="flex items-center justify-center h-full relative order-2 lg:order-2 min-h-[50vh] md:min-h-0"
               >
                 {/* Bottle Image with Drop Shadow */}
                 <img
